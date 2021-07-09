@@ -1,18 +1,21 @@
-<html><head>
-        <title>Apply</title>
-<link rel="stylesheet" href="./jobtrack.css">
-    </head>
-    <body>
-        <script src="jobtrack.js"></script>
-<h1>Applied to ...</h1>
-
-<form action="/apply/{{.Title}}" method="POST">
-<table class="center">
-    <tr><td id="date"><script>currentDate()</script></tr>
-    <tr><td><input type="text" size="64" id="jobName" placeholder="Job Name ..."></td></tr>
-    <tr><td><input type="text" size="64" id="company" placeholder="Company"></td></tr>
-    <tr><td><input type="text" size="64" id="contact" placeholder="Who"></td></tr>
-    <tr><td><div><input type="submit" value="Save"></div></td></tr>
-</table>
-</form>
-    </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <title>Apply</title>
+    <link rel="stylesheet" href="./jobtrack.css">
+  </head>
+  <body>
+    <script src="jobtrack.js"></script>
+    <h1>Applied to ...</h1>
+    <form action="/apply/{{.Title}}" method="post">
+      <table>
+        <tr><td id="date"><script>currentDate()</script></td></tr>
+        <tr><td><input type="text" size="64" id="jobName" placeholder= "Job Name ..."></td></tr>
+        <tr><td><input type="text" size="64" id="company" placeholder= "Company"></td></tr>
+        <tr><td><input type="text" size="64" id="contact" placeholder= "Who"></td></tr>
+        <tr><td><div><input type="submit" value="Save"></div></td></tr>
+      </table>
+    </form>
+  </body>
+</html>

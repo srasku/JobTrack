@@ -1,26 +1,29 @@
-<html><head>
-        <title>Job Interview</title>
-<link rel="stylesheet" href="./jobtrack.css">
-    </head>
-    <body>
-        <script src="jobtrack.js"></script>
-<h1>Job Interview</h1>
-
-<form action="/job-interview/{{.Title}}" method="POST">
-<table class="center">
-    <tr><td id="date"><script>currentDate()</script></tr>
-    <tr><td><input type="text" size="64" id="company" placeholder="Company"></td></tr>
-    <tr><td><input type="text" size="64" id="jobName" placeholder="Job Name ..."></td></tr>
-    <tr><td><input type="text" size="64" id="interviewer" placeholder="Who"></td>
-    <td><select name="interviewType" id="interviewType">
-                <option value="---">Interview Type</option>
-                <option value="Info">HR</option>
-                <option value="Info">Hiring Manager</option>
-                <option value="Info">Peers</option>
-                <option value="Info">Test</option>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <title>Job Interview</title>
+    <link rel="stylesheet" href="./jobtrack.css">
+  </head>
+  <body>
+    <script src="jobtrack.js"></script>
+    <h1>Job Interview</h1>
+    <form action="/job-interview/{{.Title}}" method="post">
+      <table>
+        <tr><td id="date"><script>currentDate()</script></td></tr>
+        <tr><td><input type="text" size="64" id="company" placeholder= "Company"></td></tr>
+        <tr><td><input type="text" size="64" id="jobName" placeholder= "Job Name ..."></td></tr>
+        <tr><td><input type="text" size="64" id="interviewer" placeholder="Who"></td><td>
+            <select name="interviewType" id="interviewType">
+              <option value="---">Interview Type</option>
+              <option value="HR">HR</option>
+              <option value="Manager">Hiring Manager</option>
+              <option value="Peers">Peers</option>
+              <option value="Test">Technical Test</option>
             </select>
-        </td></tr>
-    <tr><td><div><input type="submit" value="Save"></div></td></tr>
-</table>
-</form>
-    </body></html>
+          </td></tr>
+        <tr><td><div><input type="submit" value="Save"></div></td></tr>
+      </table>
+    </form>
+  </body>
+</html>
