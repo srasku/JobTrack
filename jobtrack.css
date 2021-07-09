@@ -10,7 +10,6 @@ h1 {
 }
 
 td {
-    min-width: 12.5em;
     text-align: center
 }
 
@@ -23,5 +22,6 @@ a:visited {
 }
 
 #contactType {
+    min-width: 16em;
     width: 100%;
 }
