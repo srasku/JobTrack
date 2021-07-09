@@ -1,0 +1,19 @@
+<html><head>
+        <title>Informational Interview</title>
+<link rel="stylesheet" href="./jobtrack.css">
+    </head>
+    <body>
+        <script src="jobtrack.js"></script>
+<h1>Informational Interview</h1>
+
+<form action="/info-interview/{{.Title}}" method="POST">
+<table class="center">
+    <tr><td id="date"><script>currentDate()</script></tr>
+    <tr><td><input type="text" size="64" id="interviewee" placeholder="Who"></td>
+    <tr><td><input type="text" size="64" id="company" placeholder="Company"></td></tr>
+    <tr><td><textarea id="notes" rows="4" cols="55" placeholder="Notes ..."></textarea></td></tr>
+    <tr><td><div><input type="submit" value="Save"></div></td></tr>
+</table>
+</form>
+<a href="index.html">Home</a>
+    </body></html>

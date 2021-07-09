@@ -1,0 +1,33 @@
+<html><head>
+        <title>Network</title>
+<link rel="stylesheet" href="./jobtrack.css">
+    </head>
+<body>
+        <script src="jobtrack.js"></script>
+<h1>Networked with ...</h1>
+
+<form action="/network/{{.Title}}" method="POST">
+<table class="center">
+    <tr><td colspan="2" id="date"><script>currentDate()</script></tr>
+    <tr><td><input type="text" size="32" id="contact" placeholder="Contact ..."></td>
+        <td><select name="contactType" id="contactType">
+                <option value="---">Contact Type</option>
+                <option value="E-mail">E-mail</option>
+                <option value="Phone Call">Phone Call</option>
+                <option value="Video Call">Video Call</option>
+                <option value="In Person">In Person</option>
+                <option value="Chat - Google Hangout">Chat - Google Hangout</option>
+                <option value="Chat - WhatsApp">Chat - WhatsApp</option>
+                <option value="Chat - iMessage">Chat - iMessage</option>
+                <option value="Chat - LinkedIn">Chat - LinkedIn</option>
+            </select>
+        </td></tr>
+        <tr><td colspan="2">
+                <textarea id="notes" rows="4" cols="55" placeholder="Notes ..."></textarea>
+            </td></tr>
+    <tr><td colspan="2">
+    <input type="submit" value=" Save ">
+        </td></tr>
+</table>
+</form>
+    </body></html>
