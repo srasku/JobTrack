@@ -14,12 +14,6 @@ td {
     text-align: center
 }
 
-/* .center { */
-/*     width: 150px; */
-/*     margin-left: auto; */
-/*     margin-right: auto; */
-/* } */
-
 a:link {
     color: white;
 }
@@ -27,10 +21,6 @@ a:link {
 a:visited {
     color: white;
 }
-
-/* #contact { */
-/*     width: 100%; */
-/* } */
 
 #contactType {
     width: 100%;
