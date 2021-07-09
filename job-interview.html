@@ -10,10 +10,10 @@
     <h1>Job Interview</h1>
     <form action="/job-interview/{{.Title}}" method="post">
       <table>
-        <tr><td id="date"><script>currentDate()</script></td></tr>
-        <tr><td><input type="text" size="64" id="company" placeholder= "Company"></td></tr>
-        <tr><td><input type="text" size="64" id="jobName" placeholder= "Job Name ..."></td></tr>
-        <tr><td><input type="text" size="64" id="interviewer" placeholder="Who"></td><td>
+        <tr><td colspan="2" id="date"><script>currentDate()</script></td></tr>
+        <tr><td colspan="2"><input type="text" size="64" id="company" placeholder= "Company"></td></tr>
+        <tr><td colspan="2"><input type="text" size="64" id="jobName" placeholder= "Job Name ..."></td></tr>
+        <tr><td><input type="text" size="47" id="interviewer" placeholder="Who"></td><td>
             <select name="interviewType" id="interviewType">
               <option value="---">Interview Type</option>
               <option value="HR">HR</option>
@@ -22,7 +22,7 @@
               <option value="Test">Technical Test</option>
             </select>
           </td></tr>
-        <tr><td><div><input type="submit" value="Save"></div></td></tr>
+        <tr><td colspan="2"><div><input type="submit" value="Save"></div></td></tr>
       </table>
     </form>
   </body>
