@@ -9,6 +9,12 @@ h1 {
     font-style: italic;
 }
 
+h1 a:link {
+    position: absolute;
+    left: 27em;
+    font-size: .77em;
+}
+
 td {
     text-align: center
 }
